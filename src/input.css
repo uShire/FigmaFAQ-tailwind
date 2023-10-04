@@ -26,10 +26,10 @@ body {
     @apply flex items-center justify-center;
   }
   .header .branding h1 {
-    @apply text-[5rem] font-bold;
+    @apply text-[2rem] lg:text-[5rem] font-bold;
   }
   .header .branding img {
-    @apply w-[35rem];
+    @apply w-[15rem] lg:w-[35rem];
   }
 
   .faq .faq__wrapper {
@@ -76,11 +76,7 @@ body {
     @apply text-sm text-blue-500;
   }
   .faq .faq__questions__item h4 {
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    @apply flex items-center justify-between relative lg:px-[1.5rem];
   }
   .faq .faq__questions__item h4:before {
     @apply content-[''] w-[10rem] h-1  absolute bottom-[-1px] left-[3rem];

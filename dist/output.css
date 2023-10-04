@@ -575,15 +575,25 @@ video {
 }
 
 .header .branding h1 {
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .header .branding h1 {
+    font-size: 5rem;
+  }
+}
+
 .header .branding img {
-  width: 35rem;
+  width: 15rem;
 }
 
 @media (min-width: 1024px) {
+  .header .branding img {
+    width: 35rem;
+  }
+
   .faq .faq__wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -688,11 +698,17 @@ video {
 }
 
 .faq .faq__questions__item h4 {
-  padding: 0 1rem;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .faq .faq__questions__item h4 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .faq .faq__questions__item h4:before {

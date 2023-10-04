@@ -23,7 +23,7 @@ body {
 
 @layer components {
   .header .branding {
-    @apply flex items-center justify-center;
+    @apply flex items-center justify-center transform -translate-y-20;
   }
   .header .branding h1 {
     @apply text-[2rem] lg:text-[5rem] font-bold;

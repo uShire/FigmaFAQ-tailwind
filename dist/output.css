@@ -571,15 +571,16 @@ video {
 .header .branding {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header .branding h1 {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 
 .header .branding img {
-  width: 15rem;
+  width: 35rem;
 }
 
 @media (min-width: 1024px) {
@@ -649,8 +650,7 @@ video {
   padding: 1.25rem;
 }
 
-.faq .faq__questions__item:not(:first-child),
-  .faq .faq__questions__item:not(:last-child) {
+.faq .faq__questions__item:not(:first-child) {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }

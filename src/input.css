@@ -23,7 +23,7 @@ body {
 
 @layer components {
   .header .branding {
-    @apply flex items-center justify-center transform -translate-y-20;
+    @apply flex items-center justify-center transform -translate-y-20 animate-pulse;
   }
   .header .branding h1 {
     @apply text-[2rem] lg:text-[5rem] font-bold;
@@ -100,7 +100,7 @@ body {
     @apply transform rotate-180 ease-in-out duration-500;
   }
   .faq .faq__questions__item ul.open {
-    @apply max-h-[100rem] ease-in-out duration-500;
+    @apply max-h-[400rem] ease-in-out duration-500;
   }
   .faq .faq__questions__item h4 a {
     @apply flex items-center gap-2 text-[1.2rem] font-semibold text-dark;

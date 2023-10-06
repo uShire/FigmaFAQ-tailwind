@@ -572,6 +572,16 @@ video {
   display: flex;
   --tw-translate-y: -5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.header .branding {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   align-items: center;
   justify-content: center;
 }
@@ -749,7 +759,7 @@ video {
 }
 
 .faq .faq__questions__item ul.open {
-  max-height: 100rem;
+  max-height: 400rem;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -781,6 +791,18 @@ video {
 
 .visible {
   visibility: visible;
+}
+
+.grid {
+  display: grid;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .text-light {
